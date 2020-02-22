@@ -1,5 +1,6 @@
 package core;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -56,6 +57,11 @@ public class WebAutomation {
     public void Click(WebElement webElement){
         Wait(webElement);
         webElement.click();
+    }
+
+    public void ClickLinkByText(String text){
+        Wait(driver.findElement(By.linkText(text)));
+        driver.findElement(By.linkText(text)).click();
     }
 
     public void EnterText(WebElement webElement, String value){
