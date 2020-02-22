@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage extends WebAutomation  {
 
-    private WebDriver _driver;
+    //private WebDriver _driver;
     //private WebAutomation _webAutomation;
 
     public HomePage(){
