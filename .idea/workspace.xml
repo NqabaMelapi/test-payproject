@@ -4,7 +4,16 @@
     <list default="true" id="96892792-c9ba-4cc3-ba40-4bcd990d778a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PayProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PayProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PayProject/core/WebAutomation$Browser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PayProject/core/WebAutomation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PayProject/models/PersonalDetailsModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PayProject/screens/HomePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PayProject/screens/IslamicPremiumBankingPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PayProject/utilities/DataSheet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/WebAutomation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/WebAutomation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/IslamicPremiumBankingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/IslamicPremiumBankingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/DataSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/DataSheet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -31,12 +41,51 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/jexcelapi_2_6_12/jexcelapi/jxl.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="core" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.IslamicPremiumBankingApplicationTest">
+    <configuration name="All in PayProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PayProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IslamicPremiumBankingApplicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PayProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="IslamicPremiumBankingApplicationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.IslamicPremiumBankingApplicationTest" />
+        <item itemvalue="JUnit.All in PayProject" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -56,10 +105,42 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="502" y="186" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1582396335624" />
-    <state x="201" y="5" key="SettingsEditor" timestamp="1582396347197">
+    <state width="1398" height="276" key="GridCell.Tab.0.bottom" timestamp="1582495264930">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="201" y="5" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1582396347197" />
+    <state width="1398" height="276" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1582495264930" />
+    <state width="1398" height="276" key="GridCell.Tab.0.center" timestamp="1582495264930">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1398" height="276" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1582495264930" />
+    <state width="1398" height="276" key="GridCell.Tab.0.left" timestamp="1582495264930">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1398" height="276" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1582495264930" />
+    <state width="1398" height="276" key="GridCell.Tab.0.right" timestamp="1582495264930">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1398" height="276" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1582495264930" />
+    <state width="1398" height="276" key="GridCell.Tab.1.bottom" timestamp="1582495264798">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1398" height="276" key="GridCell.Tab.1.bottom/0.0.1440.860@0.0.1440.860" timestamp="1582495264798" />
+    <state width="1398" height="276" key="GridCell.Tab.1.center" timestamp="1582495264798">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1398" height="276" key="GridCell.Tab.1.center/0.0.1440.860@0.0.1440.860" timestamp="1582495264798" />
+    <state width="1398" height="276" key="GridCell.Tab.1.left" timestamp="1582495264798">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1398" height="276" key="GridCell.Tab.1.left/0.0.1440.860@0.0.1440.860" timestamp="1582495264798" />
+    <state width="1398" height="276" key="GridCell.Tab.1.right" timestamp="1582495264798">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1398" height="276" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1582495264798" />
+    <state x="201" y="5" key="SettingsEditor" timestamp="1582444655993">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="201" y="5" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1582444655993" />
     <state x="313" y="163" key="Vcs.Push.Dialog.v2" timestamp="1582365289039">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
@@ -68,5 +149,28 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="421" y="255" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1582312555466" />
+    <state x="444" y="324" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1582444802982">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="444" y="324" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1440.860@0.0.1440.860" timestamp="1582444802982" />
+    <state x="492" y="133" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1582444829514">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="492" y="133" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1440.860@0.0.1440.860" timestamp="1582444829514" />
+    <state x="145" y="51" key="new project wizard" timestamp="1582443702673">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="145" y="51" key="new project wizard/0.0.1440.860@0.0.1440.860" timestamp="1582443702673" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/screens/IslamicPremiumBankingPage.java</url>
+          <line>130</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

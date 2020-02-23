@@ -3,6 +3,7 @@ package utilities;
 import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
+import models.PersonalDetailsModel;
 
 import java.io.File;
 import java.io.IOException;
@@ -11,13 +12,19 @@ import java.util.Hashtable;
 public class DataSheet {
 
     Workbook workbook;
-    Sheet workSheet;
-    Hashtable testData;
+    Sheet personalDetails;
+    Sheet kinDetails;
+    public Hashtable testData;
+    PersonalDetailsModel personalDetailsModel;
 
     public DataSheet(String workBookPath) {
         try {
             workbook = Workbook.getWorkbook(new File(workBookPath));
-            workSheet = workbook.getSheet("sheet1");
+            personalDetailsModel = new PersonalDetailsModel();
+
+            personalDetails = workbook.getSheet("PersonalDetails");
+            kinDetails = workbook.getSheet("kinDetails");
+
             testData = new Hashtable();
         } catch (Exception e) {
             e.printStackTrace();
@@ -43,8 +50,12 @@ public class DataSheet {
 //    }
 
     public void SetTestData() {
-        for(int i = 0; i < workSheet.getColumns(); i++) {
-            testData.put(workSheet.getCell(0, i).getContents(), workSheet.getCell(1,i).getContents());
+        for(int i = 0; i < personalDetails.getColumns(); i++) {
+            testData.put(personalDetails.getCell(i, 0).getContents(), personalDetails.getCell(i,1).getContents());
+        }
+
+        for(int i = 0; i < kinDetails.getColumns(); i++) {
+                testData.put(kinDetails.getCell(i, 0).getContents(), kinDetails.getCell(i,1).getContents());
         }
     }
 }

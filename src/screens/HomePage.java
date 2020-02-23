@@ -10,12 +10,14 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage extends WebAutomation  {
 
-    //private WebDriver _driver;
+    private WebDriver driver;
     //private WebAutomation _webAutomation;
 
-    public HomePage(){
-        PageFactory.initElements(driver, this);
+    public HomePage(WebDriver driver){
+        this.driver = driver;
+        PageFactory.initElements(this.driver, this);
     }
+
 
     @FindBy(xpath = "//*[@id=\"footer\"]/div/div/div/div[1]/div/div/div[5]/div/div/div[1]/div[3]")
     private WebElement popUp;
@@ -26,7 +28,7 @@ public class HomePage extends WebAutomation  {
     @FindBy(id = "search_0654282383")
     private WebElement searchField;
 
-    @FindBy(xpath = "//*[@id=\"809300322\"]/div/div[1]/div/form/div/button")
+    @FindBy(xpath = "//*[@id=\"0781152833\"]/div/div[1]/div/form/button")
     private WebElement searchBtn;
 
     @FindBy(id = "1393760596")
@@ -40,19 +42,29 @@ public class HomePage extends WebAutomation  {
     }
 
     public void SelectCheckBox(String id){
-        Click(driver.findElement(By.id(id)));
-
+        WaitToBeClickable(driver, driver.findElement(By.xpath("//*[@id=\"content\"]/div/div/div[1]/div/div/div/div/div/div[2]/form/ul/li[2]/label")));
+        Click(driver.findElement(By.xpath("//*[@id=\"content\"]/div/div/div[1]/div/div/div/div/div/div[2]/form/ul/li[2]/label")));
     }
 
-    public void ClickLinkByText(String text){
-       super.ClickLinkByText(text);
+    public void ClickLinkByText(WebDriver driver ,String text){
+       super.ClickLinkByText(driver,text);
     }
 
     public boolean ValidateIsHomeScreen(){
-        return ValidateExists(homeComponentContent);
+        return ValidateExists(driver ,homeComponentContent);
     }
 
     public void ClosePopUP(){
-        if (ValidateExists(popUp)) popUp.click();
+        try {
+
+                if (ValidateExists( driver, popUp))
+                {
+                    WaitToBeClickable(driver,popUp);
+                    Click(popUp);
+                }
+
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

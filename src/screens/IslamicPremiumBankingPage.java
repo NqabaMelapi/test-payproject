@@ -3,14 +3,19 @@ package screens;
 import core.WebAutomation;
 import models.PersonalDetailsModel;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.Hashtable;
+
 public class IslamicPremiumBankingPage extends WebAutomation {
 
-    public IslamicPremiumBankingPage(){
-        PageFactory.initElements(driver, this);
+    private WebDriver driver;
+    public IslamicPremiumBankingPage(WebDriver driver){
+        this.driver = driver;
+        PageFactory.initElements(this.driver, this);
     }
 
     @FindBy(id = "firstName")
@@ -70,10 +75,12 @@ public class IslamicPremiumBankingPage extends WebAutomation {
     @FindBy(id = "tnc_label-container")
     private WebElement acceptAllCheckbox;
 
-    @FindBy(id = "insolvent0")
+    //@FindBy(id = "insolvent0")
+    @FindBy(xpath = "//*[@id=\"questionTwo\"]/div[1]/fieldset/form-radio/fieldset/div/div/label[1]")
     private WebElement noNeverBeenInsolvent;
 
-    @FindBy(id = "debtReview1")
+    //@FindBy(id = "debtReview1")
+    @FindBy(xpath = "//*[@id=\"insolvensy-container\"]/div/div[2]/div/div/div[1]/div/div/div/div[1]/fieldset/form-radio/fieldset/div/div/label[2]")
     private WebElement noNotInsolvent;
 
     @FindBy(xpath = "/html/body/dsp-core/div[1]/ui-view/ca-welcome-main/div/div/ui-view/ca-documents/div/div/div[2]/div/div[1]/div/span/div/tooltip/div/div/div[1]")
@@ -83,10 +90,12 @@ public class IslamicPremiumBankingPage extends WebAutomation {
     private WebElement infoIcon;
 
     //Let's continue
-    @FindBy(xpath = "/html/body/dsp-core/div[1]/ui-view/dsp-decision-tree/cb-form/form/div/div/div[2]/div/div[2]/form-button/div/button")
+    //@FindBy(xpath = "/html/body/dsp-core/div[1]/ui-view/dsp-decision-tree/cb-form/form/div/div/div[2]/div/div[2]/form-button/div/button")
+    @FindBy(xpath = "//button[@class='btn btn-primary btn-lg']")
     private WebElement letsContinueBtn;
 
-    @FindBy(id = "makeDecision0")
+    //@FindBy(id = "makeDecision0")
+    @FindBy(xpath = "/html/body/dsp-core/div[1]/ui-view/dsp-decision-tree/cb-form/form/div/div/div[2]/div/div[1]/form-radio/fieldset/div/div/label[1]/span[2]")
     private WebElement newCustomerRadioBtn;
 
     @FindBy(xpath = "//*[@id=\"0416381654\"]/div/div[1]/div/div/p[2]/a")
@@ -96,11 +105,12 @@ public class IslamicPremiumBankingPage extends WebAutomation {
     private WebElement islamicPremiumBankingTitle;
 
     public void ClickApplyNow(){
+        WaitToBeClickable(driver, applyNowBtn);
         Click(applyNowBtn);
     }
 
     private String GetAbsaRewardsAmount(){
-        Wait(absaRewards);
+//        Wait(absaRewards);
         return absaRewards.getText().replace("R", "").replace("pm","").trim();
     }
 
@@ -116,61 +126,91 @@ public class IslamicPremiumBankingPage extends WebAutomation {
     }
 
     private void SelectTitle(String title) {
-        Wait(driver.findElement(By.xpath("//*[contains(@value, '{title}')]".replace("{title}",title))));
+//        Wait(driver.findElement(By.xpath("//*[contains(@value, '{title}')]".replace("{title}",title))));
+        Click(titleDropDown);
         driver.findElement(By.xpath("//*[contains(@value, '{title}')]".replace("{title}",title))).click();
     }
 
     private void SelectNextOfKinRelationship(String relationship) {
-        Wait(driver.findElement(By.xpath("//*[contains(text(),'{relationship}')]".replace("{relationship}",relationship))));
+///        Wait(driver.findElement(By.xpath("//*[contains(text(),'{relationship}')]".replace("{relationship}",relationship))));
         driver.findElement(By.xpath("//*[contains(text(),'{relationship}')]".replace("{relationship}",relationship))).click();
     }
 
     public boolean ValidateIsIslamicPremiumBankingPage(){
-        return ValidateExists(islamicPremiumBankingTitle);
+        return ValidateExists( driver,islamicPremiumBankingTitle);
     }
 
     public void SelectNewCustomer(){
+        WaitToBeClickable(driver, newCustomerRadioBtn);
         Click(newCustomerRadioBtn);
     }
 
     public void ClickLetsContinue(){
+        WaitToBeClickable(driver, letsContinueBtn);
         Click(letsContinueBtn);
     }
 
     public String GetToolTipInfo(){
+       // WaitToBeClickable(driver, toolTipContent);
         Click(infoIcon);
         return toolTipContent.getText();
     }
 
+    public void SwitchToIslamicPremiumBankingApplicationTab(){
+        SwitchToNextTab(driver);
+    }
+
     public void ClickNoNotInsolvent(){
+        WaitToBeClickable(driver, noNotInsolvent);
         Click(noNotInsolvent);
     }
 
     public void ClickNoNeverBeenInsolvent(){
+        WaitToBeClickable(driver, noNeverBeenInsolvent);
         Click(noNeverBeenInsolvent);
     }
 
     public void GiveConsent(){
+        WaitToBeClickable(driver, acceptAllCheckbox);
         Click(acceptAllCheckbox);
     }
 
-    public void EnterPersonalDetails(PersonalDetailsModel personalDetails){
-        SelectTitle(personalDetails.title);
-        EnterText(firstName, personalDetails.firstName );
-        EnterText(suranme, personalDetails.surname);
-        EnterText(idNumner, personalDetails.idNumber );
-        EnterText(homeLanguage, personalDetails.homeLanguage);
-        EnterText(searchOptionNationality, personalDetails.nationality);
-        EnterText(searchOptionCountryOfBirth, personalDetails.countryOfBirth);
-        EnterText(searchOptionCountryOfResidence, personalDetails.countryOfResidence );
-        if (personalDetails.maritalStatus.equals("No")) Click(MaritalStatusNotMarried);
+//    public void EnterPersonalDetails(PersonalDetailsModel personalDetails){
+//        SelectTitle(personalDetails.title);
+//        EnterText(firstName, personalDetails.firstName );
+//        EnterText(suranme, personalDetails.surname);
+//        EnterText(idNumner, personalDetails.idNumber );
+//        EnterText(homeLanguage, personalDetails.homeLanguage);
+//        EnterText(searchOptionNationality, personalDetails.nationality);
+//        EnterText(searchOptionCountryOfBirth, personalDetails.countryOfBirth);
+//        EnterText(searchOptionCountryOfResidence, personalDetails.countryOfResidence );
+//        if (personalDetails.maritalStatus.equals("No")) Click(MaritalStatusNotMarried);
+//
+//        EnterText(kinFirstName, personalDetails.kinFirstName );
+//        EnterText(kinSurname, personalDetails.kinSurname);
+//        EnterText(kinContactNumber, personalDetails.kinContactNumber );
+//        EnterText(kinEmailAddress, personalDetails.kinEmailAddress);
+//
+//        Click(kinRelationshipDropdownBtn);
+//        SelectNextOfKinRelationship(personalDetails.kinRelationship);
+//    }
+        public void EnterPersonalDetails(Hashtable testData){
+            SelectTitle(testData.get("Title").toString());
+            EnterText(firstName, testData.get("First name").toString());
+            EnterText(suranme, testData.get("Last name").toString());
+            EnterText(idNumner, testData.get("ID number").toString());
+            EnterText(homeLanguage, testData.get("Language").toString());
+            EnterText(searchOptionNationality, testData.get("Nationality").toString());
+            EnterText(searchOptionCountryOfBirth, testData.get("Country of Birth").toString());
+            EnterText(searchOptionCountryOfResidence, testData.get("Country of Residence").toString());
+            if (testData.get("Marital status").toString().equals("No")) Click(MaritalStatusNotMarried);
 
-        EnterText(kinFirstName, personalDetails.kinFirstName );
-        EnterText(kinSurname, personalDetails.kinSurname);
-        EnterText(kinContactNumber, personalDetails.kinContactNumber );
-        EnterText(kinEmailAddress, personalDetails.kinEmailAddress);
+            EnterText(kinFirstName, testData.get("Kin First name").toString());
+            EnterText(kinSurname, testData.get("Kin Surname").toString());
+            //EnterText(kinContactNumber, testData.get("").toString() );
+            EnterText(kinEmailAddress, testData.get("Kin Email address").toString());
 
-        Click(kinRelationshipDropdownBtn);
-        SelectNextOfKinRelationship(personalDetails.kinRelationship);
-    }
+            Click(kinRelationshipDropdownBtn);
+            SelectNextOfKinRelationship(testData.get("Kin Relationship").toString());
+        }
 }
