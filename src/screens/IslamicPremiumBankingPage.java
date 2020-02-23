@@ -146,7 +146,6 @@ public class IslamicPremiumBankingPage extends WebAutomation {
         Click(noNotInsolvent);
     }
 
-
     public void ClickNoNeverBeenInsolvent(){
         Click(noNeverBeenInsolvent);
     }
@@ -174,5 +173,4 @@ public class IslamicPremiumBankingPage extends WebAutomation {
         Click(kinRelationshipDropdownBtn);
         SelectNextOfKinRelationship(personalDetails.kinRelationship);
     }
-
 }

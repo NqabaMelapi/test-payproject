@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="96892792-c9ba-4cc3-ba40-4bcd990d778a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PayProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PayProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/IslamicPremiumBankingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/IslamicPremiumBankingPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +33,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/selenium-java-3.141.59/libs" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/jexcelapi_2_6_12/jexcelapi/jxl.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -51,14 +52,14 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="502" y="186" key="FileChooserDialogImpl" timestamp="1582313477588">
+    <state x="502" y="186" key="FileChooserDialogImpl" timestamp="1582396335624">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="502" y="186" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1582313477588" />
-    <state x="201" y="5" key="SettingsEditor" timestamp="1582313489312">
+    <state x="502" y="186" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1582396335624" />
+    <state x="201" y="5" key="SettingsEditor" timestamp="1582396347197">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="201" y="5" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1582313489312" />
+    <state x="201" y="5" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1582396347197" />
     <state x="313" y="163" key="Vcs.Push.Dialog.v2" timestamp="1582365289039">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
