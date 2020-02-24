@@ -128,7 +128,9 @@ public class IslamicPremiumBankingPage extends WebAutomation {
     private void SelectTitle(String title) {
 //        Wait(driver.findElement(By.xpath("//*[contains(@value, '{title}')]".replace("{title}",title))));
         Click(titleDropDown);
-        driver.findElement(By.xpath("//*[contains(@value, '{title}')]".replace("{title}",title))).click();
+        String xpath = "//*[contains(@value, '{title}')]".replace("{title}",title);
+        //driver.findElement(By.xpath("//*[contains(@value, '{title}')]".replace("{title}",title))).click();
+        driver.findElement(By.xpath("//*[@id=\"dspApplication\"]/div[2]/div[1]/div/ui-view/ca-your-details-personal/cb-form/form/div[1]/div/div/fieldset/div[1]/div/form-tabbed-radio/div/div[3]/label[2]")).click();
     }
 
     private void SelectNextOfKinRelationship(String relationship) {
@@ -194,15 +196,41 @@ public class IslamicPremiumBankingPage extends WebAutomation {
 //        Click(kinRelationshipDropdownBtn);
 //        SelectNextOfKinRelationship(personalDetails.kinRelationship);
 //    }
+//*[@id="dspApplication"]/div[2]/div[1]/div/ui-view/ca-your-details-personal/cb-form/form/div[1]/div/div/fieldset/div[4]/div[1]/form-tabbed-search/div/div[3]/div/form-dropdown-search/div/div/div[2]/form-dropdown-option/a
+        public void SelectNationality(Hashtable testData){
+
+            WaitToBeClickable(driver, nationalityDropdownBtn);
+            Click(nationalityDropdownBtn);
+            EnterText(searchOptionNationality, testData.get("Nationality").toString());
+            Click(driver.findElement(By.xpath("//*[@id=\"dspApplication\"]/div[2]/div[1]/div/ui-view/ca-your-details-personal/cb-form/form/div[1]/div/div/fieldset/div[4]/div[1]/form-tabbed-search/div/div[3]/div/form-dropdown-search/div/div/div[2]/form-dropdown-option/a")));
+        }
+
+        public void SelectCountryOfBirth(Hashtable testData){
+            WaitToBeClickable(driver, countryOfBirthDropdownBtn);
+            Click(countryOfBirthDropdownBtn);
+            EnterText(searchOptionCountryOfBirth, testData.get("Country of Birth").toString());
+            //SelectCountryOfBirth();
+            Click(driver.findElement(By.xpath("//*[@id=\"dspApplication\"]/div[2]/div[1]/div/ui-view/ca-your-details-personal/cb-form/form/div[1]/div/div/fieldset/div[4]/div[2]/form-tabbed-search/div/div[3]/div/form-dropdown-search/div/div/div[2]/form-dropdown-option/a")));
+        }
+
+    public void SelectCountryOfResidence(Hashtable testData){
+        WaitToBeClickable(driver, countryOfResidenceDropdownBtn);
+        Click(countryOfResidenceDropdownBtn);
+        EnterText(searchOptionCountryOfResidence, testData.get("Country of Residence").toString());
+        //SelectCountryOfResidence();
+        Click(driver.findElement(By.xpath("//*[@id=\"dspApplication\"]/div[2]/div[1]/div/ui-view/ca-your-details-personal/cb-form/form/div[1]/div/div/fieldset/div[5]/div[1]/form-tabbed-search/div/div[3]/div/form-dropdown-search/div/div/div[2]/form-dropdown-option/a")));
+    }
         public void EnterPersonalDetails(Hashtable testData){
             SelectTitle(testData.get("Title").toString());
             EnterText(firstName, testData.get("First name").toString());
             EnterText(suranme, testData.get("Last name").toString());
             EnterText(idNumner, testData.get("ID number").toString());
             EnterText(homeLanguage, testData.get("Language").toString());
-            EnterText(searchOptionNationality, testData.get("Nationality").toString());
-            EnterText(searchOptionCountryOfBirth, testData.get("Country of Birth").toString());
-            EnterText(searchOptionCountryOfResidence, testData.get("Country of Residence").toString());
+
+            SelectNationality(testData);
+            SelectCountryOfBirth(testData);
+            SelectCountryOfResidence(testData);
+
             if (testData.get("Marital status").toString().equals("No")) Click(MaritalStatusNotMarried);
 
             EnterText(kinFirstName, testData.get("Kin First name").toString());
