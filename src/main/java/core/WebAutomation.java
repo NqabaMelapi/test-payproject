@@ -1,4 +1,4 @@
-package core;
+package main.java.core;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -52,49 +52,49 @@ public class WebAutomation {
         driver.close();
     }
 
-    public void WaitToBeClickable(WebDriver driver ,WebElement webElement){
+    protected void WaitToBeClickable(WebDriver driver ,WebElement webElement){
         WebDriverWait wait = new WebDriverWait(driver, 120);
         wait.until(ExpectedConditions.elementToBeClickable(webElement));
     }
 
-    public void WaitToBeDisplayed(WebDriver driver ,WebElement webElement){
+    protected void WaitToBeDisplayed(WebDriver driver ,WebElement webElement){
         WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.visibilityOf(webElement));
     }
 
-    public void Click(WebElement webElement){
+    protected void Click(WebElement webElement){
 //        Wait(webElement);
         webElement.click();
     }
 
-    public void ClickLinkByText(WebDriver driver ,String text){
+    protected void ClickLinkByText(WebDriver driver ,String text){
 //        Wait(driver.findElement(By.linkText(text)));
         WaitToBeClickable(driver, driver.findElement(By.linkText(text)));
         driver.findElement(By.linkText(text)).click();
     }
 
-    public void EnterText(WebElement webElement, String value){
+    protected void EnterText(WebElement webElement, String value){
 //        Wait(webElement);
         webElement.sendKeys(value);
     }
 
-    public void SelectByValue(WebElement webElement, String value){
+    protected void SelectByValue(WebElement webElement, String value){
         Select dropDown = new Select(webElement);
         dropDown.selectByValue(value);
     }
 
-    public void SelectByIndex(WebElement webElement, int index){
+    protected void SelectByIndex(WebElement webElement, int index){
         Select dropDown = new Select(webElement);
         dropDown.selectByIndex(index);
     }
 
-    public boolean ValidateExists( WebDriver driver,WebElement webElement){
+    protected boolean ValidateExists( WebDriver driver,WebElement webElement){
         //Wait(webElement);
         WaitToBeClickable(driver, webElement);
         return webElement.isDisplayed();
     }
 
-    public void SwitchToNextTab(WebDriver driver){
+    protected void SwitchToNextTab(WebDriver driver){
 //        driver.SwitchTo().Window(driver.WindowHandles.Last());
 //        driver.switchTo().window(driver.getWindowHandle().
         ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());

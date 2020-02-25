@@ -1,9 +1,9 @@
-package utilities;
+package main.java.utilities;
 
 import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
-import models.PersonalDetailsModel;
+
 
 import java.io.File;
 import java.io.IOException;
@@ -15,12 +15,11 @@ public class DataSheet {
     Sheet personalDetails;
     Sheet kinDetails;
     public Hashtable testData;
-    PersonalDetailsModel personalDetailsModel;
+
 
     public DataSheet(String workBookPath) {
         try {
             workbook = Workbook.getWorkbook(new File(workBookPath));
-            personalDetailsModel = new PersonalDetailsModel();
 
             personalDetails = workbook.getSheet("PersonalDetails");
             kinDetails = workbook.getSheet("kinDetails");

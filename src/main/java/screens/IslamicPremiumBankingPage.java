@@ -1,7 +1,6 @@
-package screens;
+package main.java.screens;
 
-import core.WebAutomation;
-import models.PersonalDetailsModel;
+import main.java.core.WebAutomation;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

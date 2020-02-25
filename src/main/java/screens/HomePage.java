@@ -1,6 +1,6 @@
-package screens;
+package main.java.screens;
 
-import core.WebAutomation;
+import main.java.core.WebAutomation;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage extends WebAutomation  {
+public class HomePage extends WebAutomation {
 
     private WebDriver driver;
     //private WebAutomation _webAutomation;
