@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96892792-c9ba-4cc3-ba40-4bcd990d778a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PayProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PayProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PayProject/core/WebAutomation$Browser.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PayProject/core/WebAutomation.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PayProject/models/PersonalDetailsModel.class" beforeDir="false" />
@@ -13,12 +13,12 @@
       <change beforePath="$PROJECT_DIR$/out/production/PayProject/utilities/DataSheet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PayProject/utilities/TestReport.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/PayProject/IslamicPremiumBankingApplicationTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/WebAutomation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/WebAutomation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/PersonalDetailsModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/PersonalDetailsModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/IslamicPremiumBankingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/IslamicPremiumBankingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/DataSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/DataSheet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/TestReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/TestReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/WebAutomation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/WebAutomation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/PersonalDetailsModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/IslamicPremiumBankingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/IslamicPremiumBankingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/DataSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/DataSheet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/TestReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/TestReport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/IslamicPremiumBankingApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/IslamicPremiumBankingApplicationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +55,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="C:/Projects/test-payproject" />
+    <property name="last_opened_file_path" value="C:/Dependencies/selenium-java-3.141.59/libs" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -99,8 +99,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.IslamicPremiumBankingApplicationTest" />
-        <item itemvalue="JUnit.IslamicPremiumBankingApplicationTest.IslamicPremiumBankingApplicationWithIncorrectId" />
         <item itemvalue="JUnit.All in PayProject" />
+        <item itemvalue="JUnit.IslamicPremiumBankingApplicationTest.IslamicPremiumBankingApplicationWithIncorrectId" />
       </list>
     </recent_temporary>
   </component>
@@ -118,66 +118,62 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="313" y="89" key="#Project_Structure" timestamp="1582569602681">
-      <screen x="0" y="0" width="1440" height="860" />
-    </state>
-    <state x="313" y="89" key="#Project_Structure/0.0.1440.860@0.0.1440.860" timestamp="1582569602681" />
-    <state x="445" y="119" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1582566866363">
-      <screen x="0" y="0" width="1440" height="860" />
-    </state>
-    <state x="445" y="119" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1440.860@0.0.1440.860" timestamp="1582566866363" />
     <state x="447" y="285" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1582532091966">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="447" y="285" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.860@0.0.1440.860" timestamp="1582532091966" />
-    <state x="502" y="186" key="FileChooserDialogImpl" timestamp="1582571406013">
+    <state x="502" y="186" key="FileChooserDialogImpl" timestamp="1582656481397">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="502" y="186" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1582571406013" />
-    <state width="1398" height="223" key="GridCell.Tab.0.bottom" timestamp="1582571338654">
+    <state x="502" y="186" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1582656481397" />
+    <state width="1398" height="276" key="GridCell.Tab.0.bottom" timestamp="1582657627789">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1398" height="223" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1582571338654" />
-    <state width="1398" height="223" key="GridCell.Tab.0.center" timestamp="1582571338654">
+    <state width="1398" height="276" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1582657627789" />
+    <state width="1398" height="276" key="GridCell.Tab.0.center" timestamp="1582657627788">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1398" height="223" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1582571338654" />
-    <state width="1398" height="223" key="GridCell.Tab.0.left" timestamp="1582571338654">
+    <state width="1398" height="276" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1582657627788" />
+    <state width="1398" height="276" key="GridCell.Tab.0.left" timestamp="1582657627788">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1398" height="223" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1582571338654" />
-    <state width="1398" height="223" key="GridCell.Tab.0.right" timestamp="1582571338654">
+    <state width="1398" height="276" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1582657627788" />
+    <state width="1398" height="276" key="GridCell.Tab.0.right" timestamp="1582657627789">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1398" height="223" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1582571338654" />
-    <state width="1398" height="276" key="GridCell.Tab.1.bottom" timestamp="1582530926047">
+    <state width="1398" height="276" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1582657627789" />
+    <state width="1398" height="276" key="GridCell.Tab.1.bottom" timestamp="1582657627789">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1398" height="276" key="GridCell.Tab.1.bottom/0.0.1440.860@0.0.1440.860" timestamp="1582530926047" />
-    <state width="1398" height="276" key="GridCell.Tab.1.center" timestamp="1582530926047">
+    <state width="1398" height="276" key="GridCell.Tab.1.bottom/0.0.1440.860@0.0.1440.860" timestamp="1582657627789" />
+    <state width="1398" height="276" key="GridCell.Tab.1.center" timestamp="1582657627789">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1398" height="276" key="GridCell.Tab.1.center/0.0.1440.860@0.0.1440.860" timestamp="1582530926047" />
-    <state width="1398" height="276" key="GridCell.Tab.1.left" timestamp="1582530926047">
+    <state width="1398" height="276" key="GridCell.Tab.1.center/0.0.1440.860@0.0.1440.860" timestamp="1582657627789" />
+    <state width="1398" height="276" key="GridCell.Tab.1.left" timestamp="1582657627789">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1398" height="276" key="GridCell.Tab.1.left/0.0.1440.860@0.0.1440.860" timestamp="1582530926047" />
-    <state width="1398" height="276" key="GridCell.Tab.1.right" timestamp="1582530926047">
+    <state width="1398" height="276" key="GridCell.Tab.1.left/0.0.1440.860@0.0.1440.860" timestamp="1582657627789" />
+    <state width="1398" height="276" key="GridCell.Tab.1.right" timestamp="1582657627789">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1398" height="276" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1582530926047" />
-    <state x="201" y="5" key="SettingsEditor" timestamp="1582570865204">
+    <state width="1398" height="276" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1582657627789" />
+    <state x="201" y="5" key="SettingsEditor" timestamp="1582590803398">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="201" y="5" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1582570865204" />
+    <state x="201" y="5" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1582590803398" />
     <state x="313" y="163" key="Vcs.Push.Dialog.v2" timestamp="1582365289039">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="313" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1582365289039" />
-    <state x="421" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1582571358231">
+    <state x="93" y="93" width="1253" height="673" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1582658974286">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="421" y="255" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1582571358231" />
+    <state x="93" y="93" width="1253" height="673" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1440.860@0.0.1440.860" timestamp="1582658974286" />
+    <state x="421" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1582659150011">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="421" y="255" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1582659150011" />
     <state x="444" y="324" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1582444802982">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
@@ -194,16 +190,5 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="383" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1582523902134" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/core/WebAutomation.java</url>
-          <line>77</line>
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

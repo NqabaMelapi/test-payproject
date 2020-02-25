@@ -1,14 +1,14 @@
-package main.java.utilities;
+package utilities;
 
 import jxl.Sheet;
 import jxl.Workbook;
-import jxl.read.biff.BiffException;
 
 
 import java.io.File;
-import java.io.IOException;
 import java.util.Hashtable;
 
+/** Retrieves and generate test data
+ */
 public class DataSheet {
 
     Workbook workbook;
@@ -16,7 +16,10 @@ public class DataSheet {
     Sheet kinDetails;
     public Hashtable testData;
 
-
+    /**Initialises data file path.
+     *
+     * @param workBookPath
+     */
     public DataSheet(String workBookPath) {
         try {
             workbook = Workbook.getWorkbook(new File(workBookPath));
@@ -30,24 +33,9 @@ public class DataSheet {
         }
     }
 
-    public String GetTestData(String key) {
-        String data = null;
-        try {
-            data = testData.get(key).toString();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return data;
-    }
-
-//    public int GetRowCount(){
-//        return workSheet.getRows();
-//    }
-
-//    public int GetColumnCount(){
-//        return workSheet.getColumns();
-//    }
-
+    /**Reads data from a sheet and populate it to a hastable
+     *
+     */
     public void SetTestData() {
         for(int i = 0; i < personalDetails.getColumns(); i++) {
             testData.put(personalDetails.getCell(i, 0).getContents(), personalDetails.getCell(i,1).getContents());
